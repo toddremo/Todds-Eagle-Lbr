@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.3175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1921,6 +1921,18 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <smd name="2" x="0.85" y="0" dx="0.7" dy="1.4" layer="1"/>
 <text x="-1.025" y="1.025" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.025" y="-2.15" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ABM3">
+<smd name="P$1" x="-2.05" y="0" dx="1.9" dy="2.4" layer="1" roundness="7"/>
+<smd name="P$2" x="2.05" y="0" dx="1.9" dy="2.4" layer="1" roundness="7"/>
+<wire x1="-2.5" y1="-1.5" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.5" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2.5" y2="1.5" width="0.127" layer="21"/>
+<text x="-3" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -5595,6 +5607,22 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABM3">
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
