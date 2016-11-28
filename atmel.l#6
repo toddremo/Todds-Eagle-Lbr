@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -6926,8 +6926,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <pad name="2" x="0.95" y="-1" drill="0.6" diameter="1.1"/>
 <pad name="1" x="-0.95" y="-1" drill="0.6" diameter="1.1"/>
 </package>
-<package name="AT30TSE75XA">
-</package>
 </packages>
 <symbols>
 <symbol name="6-I/O-1">
@@ -11351,22 +11349,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <pin name="X2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="G1" x="-5.08" y="-7.62" visible="off" length="middle" direction="pwr"/>
 <pin name="G2" x="5.08" y="-7.62" visible="off" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-<symbol name="AT30TSE75XA">
-<wire x1="-12.7" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
-<text x="-12.7" y="13.97" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A2" x="-15.24" y="-5.08" length="short"/>
-<pin name="A0" x="-15.24" y="0" length="short"/>
-<pin name="A1" x="-15.24" y="-2.54" length="short"/>
-<pin name="SDA" x="-15.24" y="7.62" length="short"/>
-<pin name="SCL" x="-15.24" y="5.08" length="short"/>
-<pin name="ALERT" x="-15.24" y="2.54" length="short"/>
-<pin name="VCC" x="-15.24" y="10.16" length="short" direction="pwr"/>
-<pin name="GND" x="-15.24" y="-7.62" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
